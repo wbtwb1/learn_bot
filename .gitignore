@@ -2,6 +2,6 @@ bot_settings.py
 *.log
 .vscode/
 .idea/
-env/ #папка виртуального окружения
+env/ 
 .DS_Store
 __pycache__/
