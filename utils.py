@@ -3,7 +3,6 @@ from random import choice, randint
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 import bot_settings
 
-
 def get_smile(user_data):
     if 'emoji' not in user_data:
         smile = choice(bot_settings.USER_EMOJI)
@@ -21,4 +20,4 @@ def play_random_numbers(user_number):
     return message 
 
 def main_keyboard():
-    return ReplyKeyboardMarkup([['Send me a cat', KeyboardButton('Мои координаты', request_location=True)]],resize_keyboard=True)  
+    return ReplyKeyboardMarkup([['Cat photo', KeyboardButton('My location', request_location=True)]],resize_keyboard=True)  
